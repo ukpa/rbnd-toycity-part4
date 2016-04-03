@@ -9,4 +9,10 @@ def db_create
       csv << ["id", "brand", "product", "price"]
     end
   end
+
+  def db_clear
+    data_path = File.dirname(__FILE__) + "/data.csv"
+    File.delete(data_path)
+  end
+
 end
