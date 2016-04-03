@@ -1,6 +1,5 @@
 require_relative 'find_by'
 require_relative 'errors'
-require_relative 'find_by'
 require 'csv'
 
 class Udacidata
