@@ -40,11 +40,15 @@ class Udacidata
 
   def self.find(val)
     all.each {|product| return product if product.id == val}
-    return "Not on the list"
+    raise ProductNotFoundError, "The id: #{val} you are searching for doesn't exist"
   end
 
   def self.destroy(val)
     list = CSV.read(@@data_path)
+    if val>list.length
+      raise ProductNotFoundError, "The id: #{val} you are searching for doesn't exist"
+    end
+
     destroyed_product = Product.new
     list.each do |product|
        if product[0]==val.to_s

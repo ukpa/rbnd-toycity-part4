@@ -6,7 +6,7 @@ require_relative '../lib/product'
 
 def db_seed
   # Your code goes here!
-  100.times do
+  10.times do
     Product.create(brand: Faker::Company.name,name: Faker::Commerce.product_name,price: Faker::Commerce.price)
   end
 end

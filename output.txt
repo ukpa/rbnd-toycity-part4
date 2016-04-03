@@ -1,0 +1,77 @@
+-------------------
+RETURN ALL PRODUCTS
+-------------------
+[]
+-----------------
+CREATE PRODUCTS
+-----------------
+#<Product:0x007fd0dc12a098>#<Product:0x007fd0dc11b048>#<Product:0x007fd0dc112498>#<Product:0x007fd0dc108ba0>#<Product:0x007fd0dc0f9ee8>#<Product:0x007fd0dc092400>-------------------
+RETURN ALL PRODUCTS
+-------------------
+[#<Product:0x007fd0dc080368 @id=1, @brand="Udacity", @name="yoyo", @price=10.0>, #<Product:0x007fd0dc078af0 @id=2, @brand="Bouncy", @name="ball", @price=12.0>, #<Product:0x007fd0dc070418 @id=3, @brand="MyCool", @name="dollhouse", @price=14.4>, #<Product:0x007fd0dc068c90 @id=4, @brand="MySoft", @name="stuffed animal", @price=2.09>, #<Product:0x007fd0dc05bec8 @id=5, @brand="AllMy", @name="yoyo", @price=1.0>, #<Product:0x007fd0dc0589a8 @id=6, @brand="Udacity", @name="doll", @price=5.99>]
+--------------------
+RETURN FIRST PRODUCT
+--------------------
+Name: yoyo | Brand: Udacity | Price: 10.0
+-----------------------
+RETURN FIRST 2 PRODUCTS
+-----------------------
+[#<Product:0x007fd0dc82eba0 @id=1, @brand="Udacity", @name="yoyo", @price=10.0>, #<Product:0x007fd0dc8275d0 @id=2, @brand="Bouncy", @name="ball", @price=12.0>]
+-------------------
+RETURN LAST PRODUCT
+-------------------
+#<Product:0x007fd0dc1cfb88>
+----------------------
+RETURN LAST 2 PRODUCTS
+----------------------
+[#<Product:0x007fd0dc19e010 @id=5, @brand="AllMy", @name="yoyo", @price=1.0>, #<Product:0x007fd0dc196928 @id=6, @brand="Udacity", @name="doll", @price=5.99>]
+-------------------------
+DESTROY PRODUCT WITH ID 2
+-------------------------
+#<Product:0x007fd0dc170ea8>
+-------------------------------
+FIND PRODUCT 4 AND UPDATE BRAND
+-------------------------------
+#<Product:0x007fd0dc14ade8>
+--------------
+FIND PRODUCT 1
+--------------
+#<Product:0x007fd0dc11a6e8>
+-----------------
+DESTROY PRODUCT 3
+-----------------
+#<Product:0x007fd0dc088b58>
+-------------------------------
+RETURN PRODUCTS WITH BRAND UDACITY
+-------------------------------
+[#<Product:0x007fd0dc073f50 @id=1, @brand="Udacity", @name="yoyo", @price=10.0>, #<Product:0x007fd0dc0603b0 @id=6, @brand="Udacity", @name="doll", @price=5.99>]
+-------------------------------------
+RETURN FIRST PRODUCT WITH GIVEN BRAND
+-------------------------------------
+#<Product:0x007fd0dc050c30>
+
+------------------------------------
+RETURN FIRST PRODUCT WITH GIVEN NAME
+------------------------------------
+#<Product:0x007fd0dc0288e8>
+
+----------------------------
+RETURN HASH WITH NAME COUNTS
+----------------------------
+{"yoyo"=>4}
+----------------------------
+RETURN HASH WITH BRAND COUNTS
+----------------------------
+{"Udacity"=>4}
+--------------------
+RETURN AVERAGE PRICE
+--------------------
+4.77
+--------------------
+PRINT SUMMARY REPORT
+--------------------
+Id: 1 | Brand: Udacity | Product: yoyo | Price: 10.0
+Id: 4 | Brand: NewBrand | Product: stuffed animal | Price: 2.09
+Id: 5 | Brand: AllMy | Product: yoyo | Price: 1.0
+Id: 6 | Brand: Udacity | Product: doll | Price: 5.99
+
